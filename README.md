@@ -8,3 +8,6 @@ There are three components in this system:
 3. predict.py: a program that loads a PyTorch pre-trained model for object recognition, and generates predictions when given an image
 
 model details: PyTorch pre-trained InceptionV3 model 
+
+Bonus: Load Balancing
+Once you have finished all the scripts. You can experiment with starting multiple instance of image_downloader.py and predict.py. You should see that they will consume messages from the message queues alternatively, which the need to do any configurations on the scripts.
