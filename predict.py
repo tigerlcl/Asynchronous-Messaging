@@ -1,6 +1,6 @@
 # loads a PyTorch pre-trained model for object recognition
 # generates predictions when given an image
-# Auther: LI Changlun, 1155077134
+# Auther: Tiger LI
 import os
 import json
 import base64
