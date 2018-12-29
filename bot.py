@@ -1,6 +1,7 @@
 # keep receiving user messages from Telegram
 # Be responsible for sending response back to the user
-# Auther: LI Changlun, 1155077134
+# Auther: Tiger Li
+
 import time
 import telepot
 import base64
@@ -62,8 +63,8 @@ if  __name__ == "__main__":
     # Start the thread
     Thread(target=response_thread).start()
     print("Thread 1&2 started")
-    # Provide your bot's token
-    bot = telepot.Bot("587437196:AAGKtoViNhSK7gBePn2DtRJlvBbzXl-kBkM")
+    # Provide your bot's token e.g., 12345678:A1B2C3D4E5-6F7G
+    bot = telepot.Bot("YOUR BOT's TOKEN")
     MessageLoop(bot, handle).run_as_thread()
 
     while True:
