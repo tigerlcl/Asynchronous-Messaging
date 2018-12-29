@@ -1,6 +1,6 @@
 # a program that is responsible for downloading images
 # from either Telegram or a given URL
-# Auther: LI Changlun, 1155077134
+# Auther: Tiger Li
 import json
 import base64
 import telepot
@@ -10,7 +10,7 @@ from urllib import request
 from redis import StrictRedis
 
 r = StrictRedis(host='localhost', port=6379)
-bot = telepot.Bot("587437196:AAGKtoViNhSK7gBePn2DtRJlvBbzXl-kBkM")
+bot = telepot.Bot("YOUR BOT's TOKEN")
 
 # define a simple function to process 'image.png'
 def image_digit(image):
